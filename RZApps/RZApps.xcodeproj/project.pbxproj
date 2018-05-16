@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7612507F6E756C2956E73A6C /* Pods_RZApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B859D1F0F14D581425F5AA /* Pods_RZApps.framework */; };
+		7E8BF3C620ABD3BA00550A49 /* RZPosts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3C420ABD3BA00550A49 /* RZPosts+CoreDataProperties.swift */; };
+		7E8BF3C720ABD3BA00550A49 /* RZPosts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3C520ABD3BA00550A49 /* RZPosts+CoreDataClass.swift */; };
+		7E8BF3CA20ABDF0500550A49 /* RZUsers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3C820ABDF0500550A49 /* RZUsers+CoreDataProperties.swift */; };
+		7E8BF3CB20ABDF0500550A49 /* RZUsers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3C920ABDF0500550A49 /* RZUsers+CoreDataClass.swift */; };
+		7E8BF3CD20ABE43F00550A49 /* RZCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3CC20ABE43F00550A49 /* RZCommentModel.swift */; };
+		7E8BF3D020ABE76800550A49 /* RZComments+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3CE20ABE76700550A49 /* RZComments+CoreDataClass.swift */; };
+		7E8BF3D120ABE76800550A49 /* RZComments+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3CF20ABE76800550A49 /* RZComments+CoreDataProperties.swift */; };
+		7E8BF3D320ABFB8000550A49 /* RZUserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3D220ABFB8000550A49 /* RZUserDetailView.swift */; };
+		7E8BF3D520AC2A5E00550A49 /* RZUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BF3D420AC2A5E00550A49 /* RZUserLocation.swift */; };
+		7EBC647F20AAC96D005AE9FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC647E20AAC96D005AE9FE /* AppDelegate.swift */; };
+		7EBC648420AAC96D005AE9FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC648220AAC96D005AE9FE /* Main.storyboard */; };
+		7EBC648720AAC96D005AE9FE /* RZApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC648520AAC96D005AE9FE /* RZApps.xcdatamodeld */; };
+		7EBC648920AAC96D005AE9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC648820AAC96D005AE9FE /* Assets.xcassets */; };
+		7EBC648C20AAC96D005AE9FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC648A20AAC96D005AE9FE /* LaunchScreen.storyboard */; };
+		7EBC649720AAC96D005AE9FE /* RZAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC649620AAC96D005AE9FE /* RZAppsTests.swift */; };
+		7EBC64A620AAC9DF005AE9FE /* RZBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64A520AAC9DF005AE9FE /* RZBaseView.swift */; };
+		7EBC64A820AAC9ED005AE9FE /* RZHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64A720AAC9ED005AE9FE /* RZHomeView.swift */; };
+		7EBC64AA20AACA6D005AE9FE /* RZPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64A920AACA6D005AE9FE /* RZPostModel.swift */; };
+		7EBC64AC20AACA7D005AE9FE /* RZUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64AB20AACA7D005AE9FE /* RZUserModel.swift */; };
+		7EBC64AF20AACC01005AE9FE /* RZWebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64AE20AACC01005AE9FE /* RZWebApi.swift */; };
+		7EBC64B220AACC4E005AE9FE /* RZ_Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64B120AACC4E005AE9FE /* RZ_Constant.swift */; };
+		7EBC64B420AACC5D005AE9FE /* RZ_Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64B320AACC5D005AE9FE /* RZ_Utility.swift */; };
+		7EBC64B620AACE68005AE9FE /* RZ_Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64B520AACE68005AE9FE /* RZ_Message.swift */; };
+		7EBC64BA20AAD2C9005AE9FE /* RZPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC64B920AAD2C9005AE9FE /* RZPostCell.xib */; };
+		7EBC64BD20AAD317005AE9FE /* RZPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64BC20AAD317005AE9FE /* RZPostCell.swift */; };
+		7EBC64BF20AAD70C005AE9FE /* RZPostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC64BE20AAD70C005AE9FE /* RZPostDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EBC649320AAC96D005AE9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EBC647320AAC96D005AE9FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EBC647A20AAC96D005AE9FE;
+			remoteInfo = RZApps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D65DCE691AADF267CFC6E8D /* Pods-RZApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RZApps/Pods-RZApps.debug.xcconfig"; sourceTree = "<group>"; };
+		7E8BF3C420ABD3BA00550A49 /* RZPosts+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RZPosts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E8BF3C520ABD3BA00550A49 /* RZPosts+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RZPosts+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E8BF3C820ABDF0500550A49 /* RZUsers+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RZUsers+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E8BF3C920ABDF0500550A49 /* RZUsers+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RZUsers+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E8BF3CC20ABE43F00550A49 /* RZCommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZCommentModel.swift; sourceTree = "<group>"; };
+		7E8BF3CE20ABE76700550A49 /* RZComments+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RZComments+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E8BF3CF20ABE76800550A49 /* RZComments+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RZComments+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E8BF3D220ABFB8000550A49 /* RZUserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZUserDetailView.swift; sourceTree = "<group>"; };
+		7E8BF3D420AC2A5E00550A49 /* RZUserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZUserLocation.swift; sourceTree = "<group>"; };
+		7EBC647B20AAC96D005AE9FE /* RZApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RZApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBC647E20AAC96D005AE9FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EBC648320AAC96D005AE9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EBC648620AAC96D005AE9FE /* RZApps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RZApps.xcdatamodel; sourceTree = "<group>"; };
+		7EBC648820AAC96D005AE9FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EBC648B20AAC96D005AE9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EBC648D20AAC96D005AE9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EBC649220AAC96D005AE9FE /* RZAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBC649620AAC96D005AE9FE /* RZAppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZAppsTests.swift; sourceTree = "<group>"; };
+		7EBC649820AAC96D005AE9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EBC64A520AAC9DF005AE9FE /* RZBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZBaseView.swift; sourceTree = "<group>"; };
+		7EBC64A720AAC9ED005AE9FE /* RZHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZHomeView.swift; sourceTree = "<group>"; };
+		7EBC64A920AACA6D005AE9FE /* RZPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZPostModel.swift; sourceTree = "<group>"; };
+		7EBC64AB20AACA7D005AE9FE /* RZUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZUserModel.swift; sourceTree = "<group>"; };
+		7EBC64AE20AACC01005AE9FE /* RZWebApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZWebApi.swift; sourceTree = "<group>"; };
+		7EBC64B120AACC4E005AE9FE /* RZ_Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_Constant.swift; sourceTree = "<group>"; };
+		7EBC64B320AACC5D005AE9FE /* RZ_Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_Utility.swift; sourceTree = "<group>"; };
+		7EBC64B520AACE68005AE9FE /* RZ_Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ_Message.swift; sourceTree = "<group>"; };
+		7EBC64B920AAD2C9005AE9FE /* RZPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZPostCell.xib; sourceTree = "<group>"; };
+		7EBC64BC20AAD317005AE9FE /* RZPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZPostCell.swift; sourceTree = "<group>"; };
+		7EBC64BE20AAD70C005AE9FE /* RZPostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZPostDetailView.swift; sourceTree = "<group>"; };
+		CEF47250713550712EE5512E /* Pods-RZApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-RZApps/Pods-RZApps.release.xcconfig"; sourceTree = "<group>"; };
+		D2B859D1F0F14D581425F5AA /* Pods_RZApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EBC647820AAC96D005AE9FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7612507F6E756C2956E73A6C /* Pods_RZApps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBC648F20AAC96D005AE9FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75EABCAA5ED31052998D2830 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D65DCE691AADF267CFC6E8D /* Pods-RZApps.debug.xcconfig */,
+				CEF47250713550712EE5512E /* Pods-RZApps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		772C8505DB8B4B165CD9A207 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2B859D1F0F14D581425F5AA /* Pods_RZApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EBC647220AAC96D005AE9FE = {
+			isa = PBXGroup;
+			children = (
+				7EBC647D20AAC96D005AE9FE /* RZApps */,
+				7EBC649520AAC96D005AE9FE /* RZAppsTests */,
+				7EBC647C20AAC96D005AE9FE /* Products */,
+				75EABCAA5ED31052998D2830 /* Pods */,
+				772C8505DB8B4B165CD9A207 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7EBC647C20AAC96D005AE9FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC647B20AAC96D005AE9FE /* RZApps.app */,
+				7EBC649220AAC96D005AE9FE /* RZAppsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EBC647D20AAC96D005AE9FE /* RZApps */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64A120AAC997005AE9FE /* Classes */,
+				7EBC647E20AAC96D005AE9FE /* AppDelegate.swift */,
+				7EBC648220AAC96D005AE9FE /* Main.storyboard */,
+				7EBC648820AAC96D005AE9FE /* Assets.xcassets */,
+				7EBC648A20AAC96D005AE9FE /* LaunchScreen.storyboard */,
+				7EBC648D20AAC96D005AE9FE /* Info.plist */,
+			);
+			path = RZApps;
+			sourceTree = "<group>";
+		};
+		7EBC649520AAC96D005AE9FE /* RZAppsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC649620AAC96D005AE9FE /* RZAppsTests.swift */,
+				7EBC649820AAC96D005AE9FE /* Info.plist */,
+			);
+			path = RZAppsTests;
+			sourceTree = "<group>";
+		};
+		7EBC64A120AAC997005AE9FE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64A220AAC9A4005AE9FE /* Controllers */,
+				7EBC64A320AAC9AC005AE9FE /* Models */,
+				7EBC64A420AAC9B3005AE9FE /* Helpers */,
+				7EBC64B720AACFD2005AE9FE /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7EBC64A220AAC9A4005AE9FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64A520AAC9DF005AE9FE /* RZBaseView.swift */,
+				7EBC64A720AAC9ED005AE9FE /* RZHomeView.swift */,
+				7EBC64BE20AAD70C005AE9FE /* RZPostDetailView.swift */,
+				7E8BF3D220ABFB8000550A49 /* RZUserDetailView.swift */,
+				7E8BF3D420AC2A5E00550A49 /* RZUserLocation.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7EBC64A320AAC9AC005AE9FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64A920AACA6D005AE9FE /* RZPostModel.swift */,
+				7EBC64AB20AACA7D005AE9FE /* RZUserModel.swift */,
+				7E8BF3CC20ABE43F00550A49 /* RZCommentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7EBC64A420AAC9B3005AE9FE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64C020AAE79F005AE9FE /* CoreData */,
+				7EBC64BB20AAD2DD005AE9FE /* TableCellClass */,
+				7EBC64B020AACC29005AE9FE /* RZUtility */,
+				7EBC64AD20AACBEA005AE9FE /* Service */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7EBC64AD20AACBEA005AE9FE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64AE20AACC01005AE9FE /* RZWebApi.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7EBC64B020AACC29005AE9FE /* RZUtility */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64B120AACC4E005AE9FE /* RZ_Constant.swift */,
+				7EBC64B320AACC5D005AE9FE /* RZ_Utility.swift */,
+				7EBC64B520AACE68005AE9FE /* RZ_Message.swift */,
+			);
+			path = RZUtility;
+			sourceTree = "<group>";
+		};
+		7EBC64B720AACFD2005AE9FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64B820AACFDA005AE9FE /* TableCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7EBC64B820AACFDA005AE9FE /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64B920AAD2C9005AE9FE /* RZPostCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		7EBC64BB20AAD2DD005AE9FE /* TableCellClass */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC64BC20AAD317005AE9FE /* RZPostCell.swift */,
+			);
+			path = TableCellClass;
+			sourceTree = "<group>";
+		};
+		7EBC64C020AAE79F005AE9FE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7E8BF3C520ABD3BA00550A49 /* RZPosts+CoreDataClass.swift */,
+				7E8BF3C420ABD3BA00550A49 /* RZPosts+CoreDataProperties.swift */,
+				7E8BF3C920ABDF0500550A49 /* RZUsers+CoreDataClass.swift */,
+				7E8BF3C820ABDF0500550A49 /* RZUsers+CoreDataProperties.swift */,
+				7E8BF3CE20ABE76700550A49 /* RZComments+CoreDataClass.swift */,
+				7E8BF3CF20ABE76800550A49 /* RZComments+CoreDataProperties.swift */,
+				7EBC648520AAC96D005AE9FE /* RZApps.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EBC647A20AAC96D005AE9FE /* RZApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBC649B20AAC96D005AE9FE /* Build configuration list for PBXNativeTarget "RZApps" */;
+			buildPhases = (
+				1C77D0D68AE7395A56E73875 /* [CP] Check Pods Manifest.lock */,
+				7EBC647720AAC96D005AE9FE /* Sources */,
+				7EBC647820AAC96D005AE9FE /* Frameworks */,
+				7EBC647920AAC96D005AE9FE /* Resources */,
+				F63AC1438D4B2D271468FE24 /* [CP] Embed Pods Frameworks */,
+				823A65F779C0D97F95AC6BEC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZApps;
+			productName = RZApps;
+			productReference = 7EBC647B20AAC96D005AE9FE /* RZApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EBC649120AAC96D005AE9FE /* RZAppsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EBC649E20AAC96D005AE9FE /* Build configuration list for PBXNativeTarget "RZAppsTests" */;
+			buildPhases = (
+				7EBC648E20AAC96D005AE9FE /* Sources */,
+				7EBC648F20AAC96D005AE9FE /* Frameworks */,
+				7EBC649020AAC96D005AE9FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EBC649420AAC96D005AE9FE /* PBXTargetDependency */,
+			);
+			name = RZAppsTests;
+			productName = RZAppsTests;
+			productReference = 7EBC649220AAC96D005AE9FE /* RZAppsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EBC647320AAC96D005AE9FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Abdul Hameed Mohamed Rizvi";
+				TargetAttributes = {
+					7EBC647A20AAC96D005AE9FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7EBC649120AAC96D005AE9FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7EBC647A20AAC96D005AE9FE;
+					};
+				};
+			};
+			buildConfigurationList = 7EBC647620AAC96D005AE9FE /* Build configuration list for PBXProject "RZApps" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EBC647220AAC96D005AE9FE;
+			productRefGroup = 7EBC647C20AAC96D005AE9FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EBC647A20AAC96D005AE9FE /* RZApps */,
+				7EBC649120AAC96D005AE9FE /* RZAppsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EBC647920AAC96D005AE9FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBC648C20AAC96D005AE9FE /* LaunchScreen.storyboard in Resources */,
+				7EBC64BA20AAD2C9005AE9FE /* RZPostCell.xib in Resources */,
+				7EBC648920AAC96D005AE9FE /* Assets.xcassets in Resources */,
+				7EBC648420AAC96D005AE9FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBC649020AAC96D005AE9FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C77D0D68AE7395A56E73875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RZApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		823A65F779C0D97F95AC6BEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RZApps/Pods-RZApps-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RZApps/Pods-RZApps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F63AC1438D4B2D271468FE24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RZApps/Pods-RZApps-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTPopOverMenu_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RZApps/Pods-RZApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EBC647720AAC96D005AE9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8BF3CD20ABE43F00550A49 /* RZCommentModel.swift in Sources */,
+				7EBC64AC20AACA7D005AE9FE /* RZUserModel.swift in Sources */,
+				7E8BF3C720ABD3BA00550A49 /* RZPosts+CoreDataClass.swift in Sources */,
+				7E8BF3D520AC2A5E00550A49 /* RZUserLocation.swift in Sources */,
+				7EBC64B220AACC4E005AE9FE /* RZ_Constant.swift in Sources */,
+				7EBC64A820AAC9ED005AE9FE /* RZHomeView.swift in Sources */,
+				7EBC64A620AAC9DF005AE9FE /* RZBaseView.swift in Sources */,
+				7E8BF3D320ABFB8000550A49 /* RZUserDetailView.swift in Sources */,
+				7EBC64AA20AACA6D005AE9FE /* RZPostModel.swift in Sources */,
+				7EBC64BD20AAD317005AE9FE /* RZPostCell.swift in Sources */,
+				7EBC64AF20AACC01005AE9FE /* RZWebApi.swift in Sources */,
+				7E8BF3CB20ABDF0500550A49 /* RZUsers+CoreDataClass.swift in Sources */,
+				7EBC647F20AAC96D005AE9FE /* AppDelegate.swift in Sources */,
+				7E8BF3D020ABE76800550A49 /* RZComments+CoreDataClass.swift in Sources */,
+				7E8BF3C620ABD3BA00550A49 /* RZPosts+CoreDataProperties.swift in Sources */,
+				7EBC64B420AACC5D005AE9FE /* RZ_Utility.swift in Sources */,
+				7E8BF3CA20ABDF0500550A49 /* RZUsers+CoreDataProperties.swift in Sources */,
+				7E8BF3D120ABE76800550A49 /* RZComments+CoreDataProperties.swift in Sources */,
+				7EBC64BF20AAD70C005AE9FE /* RZPostDetailView.swift in Sources */,
+				7EBC648720AAC96D005AE9FE /* RZApps.xcdatamodeld in Sources */,
+				7EBC64B620AACE68005AE9FE /* RZ_Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EBC648E20AAC96D005AE9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EBC649720AAC96D005AE9FE /* RZAppsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EBC649420AAC96D005AE9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EBC647A20AAC96D005AE9FE /* RZApps */;
+			targetProxy = 7EBC649320AAC96D005AE9FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7EBC648220AAC96D005AE9FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EBC648320AAC96D005AE9FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EBC648A20AAC96D005AE9FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EBC648B20AAC96D005AE9FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EBC649920AAC96D005AE9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EBC649A20AAC96D005AE9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EBC649C20AAC96D005AE9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D65DCE691AADF267CFC6E8D /* Pods-RZApps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRWGQJX3BY;
+				INFOPLIST_FILE = RZApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RZApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7EBC649D20AAC96D005AE9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF47250713550712EE5512E /* Pods-RZApps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRWGQJX3BY;
+				INFOPLIST_FILE = RZApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RZApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7EBC649F20AAC96D005AE9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRWGQJX3BY;
+				INFOPLIST_FILE = RZAppsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RZAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZApps.app/RZApps";
+			};
+			name = Debug;
+		};
+		7EBC64A020AAC96D005AE9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRWGQJX3BY;
+				INFOPLIST_FILE = RZAppsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RZAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZApps.app/RZApps";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EBC647620AAC96D005AE9FE /* Build configuration list for PBXProject "RZApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBC649920AAC96D005AE9FE /* Debug */,
+				7EBC649A20AAC96D005AE9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBC649B20AAC96D005AE9FE /* Build configuration list for PBXNativeTarget "RZApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBC649C20AAC96D005AE9FE /* Debug */,
+				7EBC649D20AAC96D005AE9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EBC649E20AAC96D005AE9FE /* Build configuration list for PBXNativeTarget "RZAppsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EBC649F20AAC96D005AE9FE /* Debug */,
+				7EBC64A020AAC96D005AE9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7EBC648520AAC96D005AE9FE /* RZApps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7EBC648620AAC96D005AE9FE /* RZApps.xcdatamodel */,
+			);
+			currentVersion = 7EBC648620AAC96D005AE9FE /* RZApps.xcdatamodel */;
+			path = RZApps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7EBC647320AAC96D005AE9FE /* Project object */;
+}

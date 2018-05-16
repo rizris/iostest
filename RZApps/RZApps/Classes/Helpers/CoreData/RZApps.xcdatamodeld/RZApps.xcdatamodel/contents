@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RZComments" representedClassName="RZComments" syncable="YES">
+        <attribute name="commbody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commemail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="commname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commpostid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="RZPosts" representedClassName="RZPosts" syncable="YES">
+        <attribute name="postbody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="posttitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postuserid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="RZUsers" representedClassName="RZUsers" syncable="YES">
+        <attribute name="user_bs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_catchphrase" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_companyname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="user_lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_lng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_suite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_web" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_zipcode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RZPosts" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="RZUsers" positionX="-54" positionY="18" width="128" height="270"/>
+        <element name="RZComments" positionX="-45" positionY="126" width="128" height="120"/>
+    </elements>
+</model>

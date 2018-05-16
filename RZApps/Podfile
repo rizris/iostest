@@ -1,0 +1,27 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, ‘10.0’
+
+target 'RZApps' do
+    use_frameworks!
+    
+    pod 'Alamofire', '~> 4.0'
+    pod 'AlamofireImage', '~> 3.1'
+    pod 'SwiftMessages'
+    pod 'FTPopOverMenu_Swift', '~> 0.0.6'
+    pod 'NVActivityIndicatorView'
+    pod 'HexColors'
+    pod 'DropDown'
+    
+    pod 'GoogleMaps'
+
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '4.0'
+        end
+    end
+end

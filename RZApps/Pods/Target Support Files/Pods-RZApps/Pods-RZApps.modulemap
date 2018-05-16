@@ -1,0 +1,6 @@
+framework module Pods_RZApps {
+  umbrella header "Pods-RZApps-umbrella.h"
+
+  export *
+  module * { export * }
+}
